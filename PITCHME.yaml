@@ -1,6 +1,3 @@
-# GitPitch In-60-Seconds - A Very Short Tutorial.
-#
-
 #
 # Theme Template
 # Doc: https://gitpitch.com/docs/themes/default
@@ -13,6 +10,7 @@ theme-byline     : [ "Raleway", "#FFFFFF", "none", "#FBD95E", "100", "110", "15"
 theme-text       : [ "Ubuntu", "#FFFFFF", "none", "#A0C865", "100", "100", "15" ]
 theme-links      : [ "#F1C40F", "#5254F7" ]
 theme-code       : [ "Source Code Pro", "100", "120" ]
+theme-code       : [ "Fira Code" ]
 theme-controls   : [ "#C0C0C0" ]
 theme-margins    : [ "0", "15px" ]
 layout           : center
@@ -33,7 +31,7 @@ theme-override: assets/css/PITCHME.css
 # Logo Setting
 # https://gitpitch.com/docs/settings/logo
 #
-logo : assets/img/logo.png
+logo : assets/img/hue.svg
 logo-position : top-left
 
 #
@@ -46,7 +44,7 @@ layout : center
 # Footnote Setting
 # Doc: https://gitpitch.com/docs/settings/footnote
 #
-footnote : "GitPitch - The Fastest Way From Idea To Presentation"
+footnote : "FSSlc - Docker 学习分享"
 
 #
 # Published Setting
@@ -58,7 +56,6 @@ published : true
 # Twitter Card Settings [Pro Only]
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
-title : "GitPitch In 60 Seconds"
-description : "A short tutorial introducing GitPitch Markdown Presentations for Developers."
-thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
-
+# title : "如何制作一个更小的 Docker 镜像"
+# description : "Build A Smaller Docker Image"
+# thumbnail : https://gitpitch.com/fsslc/tutorial-thumb.png

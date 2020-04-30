@@ -31,7 +31,7 @@ theme-override: assets/css/PITCHME.css
 # Logo Setting
 # https://gitpitch.com/docs/settings/logo
 #
-logo : assets/img/hue.svg
+logo : assets/img/hue.png
 logo-position : top-left
 
 #

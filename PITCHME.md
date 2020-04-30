@@ -1,6 +1,5 @@
 ## Docker 学习分享
-
-#### ---- 如果生成一个更小的 Docker 镜像
+#### —— 如果生成一个更小的 Docker 镜像
 ### By FSSlc
 
 ---
@@ -20,14 +19,16 @@
 可以从哪几方面考虑生成更小的 Docker 镜像？
 
 ### 制作阶段
-在编写 Dockerfile 时可以考虑的优化。
 
-### 优化阶段
-在构建镜像时可以考虑的优化。
+### 构建阶段
 
 ---
 
 ## 制作阶段
+
+#### 在编写 Dockerfile 时可以考虑的优化
+
+@fa[arrow-down]
 
 +++
 
@@ -51,31 +52,35 @@
 - [官方介绍文档](https://docs.docker.com/develop/develop-images/multistage-build/)
 - [上文的一个中文翻译](https://linux.cn/article-9133-1.html)
 
-> Docker多阶段构建是 17.05 以后引入的新特性，旨在解决编译和构建复杂的问题，减小镜像大小。
-
 +++ 
 
 ### 减少构建层数 
 
-- 每个 RUN COPY ADD 命令会构建一个层(1.10+)
+#### 每个 RUN COPY ADD 命令会构建一个层(1.10+)
 
-![docker layers](./assets/img/docker-filesystems-multilayer.png)
+![docker layers](assets/img/docker-filesystems-multilayer.png)
+
++++
+
+## 简单示例
 
 ```bash
 RUN apt-get -y update
 RUN apt-get install -y python
-```
 
-```bash
 RUN apt-get -y update && apt-get install -y python
 ```
+@snap[south span-100]
+@[1,2](多个RUN)
+@[4](一行命令)
+@snapend
 
 +++ 
 
 ### 避免不必要的文件
 
 - .dockerignore
-- 只添加必要的文件夹
+- 只添加必要的文件与目录
 - 删除不必要的文件
   - 删除包缓存
   - 删除构建时的源码包
@@ -86,20 +91,33 @@ RUN apt-get -y update && apt-get install -y python
 
 ## 构建阶段
 
-- docker build 使用 --squash
-- `docker export <CONTAINER ID> | docker import - some-image-name:latest`
+#### 在构建镜像时可以考虑的优化
+
++++ 
+
+## docker 命令
+
+- docker build 自己的选项
+  - `--force-rm` 总是删除临时容器
+- docker export + docker import
+
+```bash
+docker export <CONTAINER ID> | docker import - some-image-name:latest
+```
 
 +++
 
 ## 工具
 
 ### 检测工具
-- dockerfilelint
-- fromlatest
+- [dockerfilelint](https://github.com/replicatedhq/dockerfilelint)
+  - [在线网站](https://www.fromlatest.io) 
+- [docker-slim](https://github.com/docker-slim/docker-slim)
 
 ### 压缩工具
-- docker-squash
-- Python
+- [docker-squash](https://github.com/goldmann/docker-squash)
+- [docker-slim](https://github.com/docker-slim/docker-slim)
+- [minicon](https://github.com/grycap/minicon)
 
 ---
 
@@ -111,6 +129,8 @@ RUN apt-get -y update && apt-get install -y python
 - 确定是否有更好的基础镜像
 - 考虑如何减少层
 - 如何减少构建时间（合理利用 Docker 缓存）
+  - 经常变化的放到最后
+  - 将安装命令放到前面
 
 --- 
 
@@ -121,3 +141,7 @@ RUN apt-get -y update && apt-get install -y python
 - https://rollout.io/blog/alpine-based-docker-images-make-difference-real-world-apps/
 - https://resources.codeship.com/hubfs/Webinar_Resources/Reducing_Docker_Image_Sizes_Codeship_Webinar_Slides.pdf
 - https://pythonspeed.com/docker/
+- https://blog.xebialabs.com/2017/05/18/5-docker-utilities-you-should-know/
+- https://towardsdatascience.com/how-to-build-slim-docker-images-fast-ecc246d7f4a7
+- https://www.digitalocean.com/community/tutorials/how-to-optimize-docker-images-for-production
+- https://learnk8s.io/blog/smaller-docker-images

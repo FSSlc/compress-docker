@@ -76,7 +76,7 @@
 - [上文的一个中文翻译](https://linux.cn/article-9133-1.html)
 @snapend
 
-@snap[north span-100 fragment]
+@snap[midpoint span-100 fragment]
 ![docker-build-stage](assets/img/docker-build-stage.gif)
 @snapend
 +++ 

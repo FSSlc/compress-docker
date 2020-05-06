@@ -67,8 +67,8 @@
 
 +++
 
-@snap[north span-100 fragment]
-#### 使用多阶段构建
+@snap[north span-100 text-center]
+### 使用多阶段构建
 @snapend
 
 @snap[midpoint span-100 fragment]
@@ -76,10 +76,9 @@
 - [上文的一个中文翻译](https://linux.cn/article-9133-1.html)
 @snapend
 
-@snap[south span-100 fragment]
+@snap[north span-100 fragment]
 ![docker-build-stage](assets/img/docker-build-stage.gif)
-@snap[south span-100 fragment]
-
+@snapend
 +++ 
 
 @snap[north span-100 text-center]

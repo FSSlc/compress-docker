@@ -4,7 +4,9 @@
 
 ---
 
-### Why?
+@snap[north span-100 text-center]
+## Why?
+@snapend
 
 - 减少下载时间，节省带宽
 - 减少构建时间
@@ -14,12 +16,16 @@
 
 --- 
 
-### How?
+@snap[north span-100 text-center]
+## How?
+@snapend
 
-可以从哪几方面考虑生成更小的 Docker 镜像？
+#### 可以从哪几方面考虑生成更小的 Docker 镜像？
 
-- 制作阶段
-- 构建阶段
+@ul[list-spaced-bullets list-fade-fragments]
+- 制作阶段 @note(编写 Dockerfile时)
+- 构建阶段 @note(构建镜像时)
+@endul
 
 ---
 
@@ -33,38 +39,51 @@
 
 #### 选择合适的基础镜像
 
-@ul[list-spaced-bullets list-fade-fragments]
+@snap[midpoint span-100 fragment]
 - 使用小的基础镜像
     - FROM scratch
     - alpine
     - busybox
     - [distroless](https://github.com/GoogleContainerTools/distroless)
+@snapend
+
+@snap[midpoint span-100 fragment]
 - 使用官方镜像 @note[查看最佳实践示例，用以参考学习]
     - https://github.com/docker-library
+@snapend
+
+@snap[midpoint span-100 fragment]
 - 自己构建基础镜像 @note[一个 Python 镜像的示例]
     - https://github.com/jfloff/alpine-python
-@ulend
+@snapend
 
 +++
 
+@snap[north span-100 fragment]
 #### 使用多阶段构建
+@snapend
 
+@snap[midpoint span-100 fragment]
 - [官方介绍文档](https://docs.docker.com/develop/develop-images/multistage-build/)
 - [上文的一个中文翻译](https://linux.cn/article-9133-1.html)
+@snapend
 
+@snap[south span-100 fragment]
 ![docker-build-stage](assets/img/docker-build-stage.gif)
+@snap[south span-100 fragment]
 
 +++ 
 
+@snap[north span-100 text-center]
 #### 减少构建层数 
-
 ##### 每个 RUN COPY ADD 命令会构建一个层(1.10+)
+@snapend
 
-@snap[west span-50 text-center]
+@snap[west span-60 text-center fragment]
 ![multi-run](assets/img/multi-run.gif)
 @snapend 
 
-@snap[east span-50 text-center]
+@snap[east span-40 text-center fragment]
 ![docker layers](assets/img/docker-filesystems-multilayer.png)
 @snapend
 
@@ -90,14 +109,12 @@ RUN apt-get -y update && apt-get install -y python
 
 #### 避免不必要的文件
 
-@ul[list-spaced-bullets list-fade-fragments]
 - .dockerignore
 - 只添加必要的文件与目录
 - 删除不必要的文件
     - 删除包缓存
     - 删除构建时的源码包
 - 不安装不必要的软件，不安装 debug 工具
-@endul
 
 --- 
 

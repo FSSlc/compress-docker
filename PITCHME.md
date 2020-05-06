@@ -23,18 +23,22 @@
 @snap[midpoint span-100 text-center]
 #### 可以从哪几方面考虑生成更小的 Docker 镜像？
 @ul
-- 制作阶段 @note(编写 Dockerfile时)
-- 构建阶段 @note(构建镜像时)
+- 制作阶段 @note[编写 Dockerfile时]
+- 构建阶段 @note[构建镜像时]
 @ulend
 @snapend
 
 ---
 
-### 制作阶段
+@snap[north span-100 text-center]
+## 制作阶段
+@snapend
 
+@snap[midpoint span-100 text-center]
 #### 在编写 Dockerfile 时可以考虑的优化
 
 @fa[arrow-down]
+@snapend
 
 +++
 

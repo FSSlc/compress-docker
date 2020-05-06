@@ -51,20 +51,16 @@
 ### 选择合适的基础镜像
 @snapend
 
-@snap[north span-100 fragment]
+@snap[midpoint span-100 fragment]
 - 使用小的基础镜像
     - FROM scratch
     - alpine
     - busybox
     - [distroless](https://github.com/GoogleContainerTools/distroless)
-@snapend
 
-@snap[midpoint span-100 fragment]
 - 使用官方镜像 @note[查看最佳实践示例，用以参考学习]
     - https://github.com/docker-library
-@snapend
 
-@snap[south span-100 fragment]
 - 自己构建基础镜像 @note[一个 Python 镜像的示例]
     - https://github.com/jfloff/alpine-python
 @snapend

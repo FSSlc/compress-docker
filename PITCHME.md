@@ -3,17 +3,10 @@
 @snapend
 
 @snap[midpoint span-100 text-center]
-@size[1.5em](—— 如何生成一个更小的 Docker 镜像)
-@size[1.5em](By FSSlc)
+@size[1em](—— 如何生成一个更小的 Docker 镜像)
+@size[0.5em](By FSSlc)
 @snapend
 
-测试大小
-@size[0.5em](0.5em)
-@size[1em](1em)
-@size[1.5em](1.5em)
-@size[2em](2em)
-@size[2.5em](2.5em)
-@size[3em](3em)
 ---
 
 @snap[north span-100 text-center]
@@ -32,8 +25,9 @@
 ## How?
 @snapend
 
-@snap[midpoint span-100 text-center]
 #### 可以从哪几方面考虑生成更小的 Docker 镜像？
+
+@snap[midpoint span-100 text-center]
 @ul
 - 制作阶段 @note[编写 Dockerfile时]
 - 构建阶段 @note[构建镜像时]

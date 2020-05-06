@@ -1,7 +1,11 @@
+@snap[north span-50 text-center]
 ## Docker 学习分享
+@snapend
+
+@snap[midpoint span-100 text-center]
 #### —— 如果生成一个更小的 Docker 镜像
 #### By FSSlc
-
+@snapend
 ---
 
 @snap[north span-100 text-center]

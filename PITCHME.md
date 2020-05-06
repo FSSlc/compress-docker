@@ -25,7 +25,9 @@
 ## How?
 @snapend
 
+@snap[midpoint span-100 text-center]
 #### 可以从哪几方面考虑生成更小的 Docker 镜像？
+@snapend
 
 @snap[midpoint span-100 text-center]
 @ul

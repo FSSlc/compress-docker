@@ -18,8 +18,8 @@ layout           : center
 #
 # Highlight Setting
 # Doc: https://gitpitch.com/docs/settings/highlight
-#
-highlight : tomorrow
+# agate github hybrid mono-blue ir-black solarized-light tomorrow
+highlight : agate
 
 #
 # Theme-Override Setting
@@ -31,8 +31,8 @@ theme-override: assets/css/PITCHME.css
 # Logo Setting
 # https://gitpitch.com/docs/settings/logo
 #
-logo : assets/img/hue.png
-logo-position : top-left
+# logo : assets/img/hue.png
+# logo-position : top-left
 
 #
 # Layout Setting
@@ -59,3 +59,6 @@ published : true
 # title : "如何制作一个更小的 Docker 镜像"
 # description : "Build A Smaller Docker Image"
 # thumbnail : https://gitpitch.com/fsslc/tutorial-thumb.png
+
+# code line numbers
+code-line-numbers : true

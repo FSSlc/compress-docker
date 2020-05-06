@@ -41,10 +41,11 @@
 @snapend
 
 +++
+@snap[north span-100 text-center]
+### 选择合适的基础镜像
+@snapend
 
-#### 选择合适的基础镜像
-
-@snap[midpoint span-100 fragment]
+@snap[north span-100 fragment]
 - 使用小的基础镜像
     - FROM scratch
     - alpine
@@ -57,7 +58,7 @@
     - https://github.com/docker-library
 @snapend
 
-@snap[midpoint span-100 fragment]
+@snap[south span-100 fragment]
 - 自己构建基础镜像 @note[一个 Python 镜像的示例]
     - https://github.com/jfloff/alpine-python
 @snapend

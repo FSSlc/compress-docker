@@ -20,12 +20,11 @@
 ## How?
 @snapend
 
+@snap[midpoint span-100 text-center]
 #### 可以从哪几方面考虑生成更小的 Docker 镜像？
-
-@ul[list-spaced-bullets list-fade-fragments]
 - 制作阶段 @note(编写 Dockerfile时)
 - 构建阶段 @note(构建镜像时)
-@endul
+@snapend
 
 ---
 

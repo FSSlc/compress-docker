@@ -15,6 +15,56 @@ theme-controls   : [ "#C0C0C0" ]
 theme-margins    : [ "0", "15px" ]
 layout           : center
 
+# font
+
+.font-fira         	{ font-family: "Fira Code" !important; }
+.font-source-code         	{ font-family: "Source Code Pro" !important; }
+
+.font-lato         	{ font-family: "Lato" !important; }
+.font-montserrat   	{ font-family: "Montserrat" !important; }
+.font-nunito-sans  	{ font-family: "Nunito Sans" !important; }
+.font-open-sans    	{ font-family: "Open Sans" !important; }
+.font-oswald       	{ font-family: "Oswald" !important; }
+.font-poppins      	{ font-family: "Poppins" !important; }
+.font-prompt       	{ font-family: "Prompt" !important; }
+.font-quicksand       	{ font-family: "Quicksand" !important; }
+.font-raleway      	{ font-family: "Raleway" !important; }
+.font-roboto       	{ font-family: "Roboto" !important; }
+.font-source-sans-pro 	{ font-family: "Source Sans Pro" !important; }
+.font-ubuntu       	{ font-family: "Ubuntu" !important; }
+.font-work-sans    	{ font-family: "Work Sans" !important; }
+.font-bubblegum    	{ font-family: "Bubblegum" !important; }
+.font-concert-one  	{ font-family: "Concert One" !important; }
+.font-righteous    	{ font-family: "Righteous" !important; }
+
+.font-lato-medium         { font-family: "Lato Medium" !important; }
+.font-montserrat-medium   { font-family: "Montserrat Medium" !important; }
+.font-nunito-sans-medium  { font-family: "Nunito Sans Medium" !important; }
+.font-open-sans-medium    { font-family: "Open Sans Medium" !important; }
+.font-oswald-medium       { font-family: "Oswald Medium" !important; }
+.font-poppins-medium      { font-family: "Poppins Medium" !important; }
+.font-prompt-medium       { font-family: "Prompt Medium" !important; }
+.font-quicksand-medium    { font-family: "Quicksand Medium" !important; }
+.font-raleway-medium      { font-family: "Raleway Medium" !important; }
+.font-roboto-medium       { font-family: "Roboto Medium" !important; }
+.font-source-sans-pro-medium { font-family: "Source Sans Pro Medium" !important; }
+.font-ubuntu-medium       { font-family: "Ubuntu Medium" !important; }
+.font-work-sans-medium    { font-family: "Work Sans Medium" !important; }
+
+.font-lato-heavy         { font-family: "Lato Heavy" !important; }
+.font-montserrat-heavy   { font-family: "Montserrat Heavy" !important; }
+.font-nunito-sans-heavy  { font-family: "Nunito Sans Heavy" !important; }
+.font-open-sans-heavy    { font-family: "Open Sans Heavy" !important; }
+.font-oswald-heavy       { font-family: "Oswald Heavy" !important; }
+.font-poppins-heavy      { font-family: "Poppins Heavy" !important; }
+.font-prompt-heavy       { font-family: "Prompt Heavy" !important; }
+.font-quicksand-heavy    { font-family: "Quicksand Heavy" !important; }
+.font-raleway-heavy      { font-family: "Raleway Heavy" !important; }
+.font-roboto-heavy       { font-family: "Roboto Heavy" !important; }
+.font-source-sans-pro-heavy { font-family: "Source Sans Pro Heavy" !important; }
+.font-ubuntu-heavy       { font-family: "Ubuntu Heavy" !important; }
+.font-work-sans-heavy    { font-family: "Work Sans Heavy" !important; }
+
 #
 # Highlight Setting
 # Doc: https://gitpitch.com/docs/settings/highlight

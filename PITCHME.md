@@ -85,7 +85,7 @@
 ### 减少构建层数 
 @snapend
 
-@snap[north span-100 text-center fragment]
+@snap[midpoint span-100 text-center fragment]
 <br>每个 RUN COPY ADD 命令会构建一个层(1.10+)
 @snapend
 

@@ -85,9 +85,6 @@
 ### 减少构建层数 
 @snapend
 
-Note:
-每个 RUN COPY ADD 命令会构建一个层(1.10+)
-
 @snap[west span-60 text-center fragment]
 ![multi-run](assets/img/multi-run.gif)
 @snapend 
@@ -95,6 +92,9 @@ Note:
 @snap[east span-40 text-center fragment]
 ![docker layers](assets/img/docker-filesystems-multilayer.png)
 @snapend
+
+Note:
+每个 RUN COPY ADD 命令会构建一个层(1.10+)
 
 +++
 

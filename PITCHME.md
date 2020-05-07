@@ -99,10 +99,10 @@ Note:
 +++
 
 @snap[north span-100 text-center]
-#### 简单示例
+### 简单示例
 @snapend
 
-```dockerfile zoom-50
+```dockerfile
 RUN apt-get -y update
 RUN apt-get install -y python
 

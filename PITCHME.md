@@ -171,7 +171,7 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/
 @snap[west span-50 text-center]
 #### 检测工具
 - [dockerfilelint](https://github.com/replicatedhq/dockerfilelint)
-  - [在线网站](https://www.fromlatest.io) 
+  - @size[0.5em]([在线网站](https://www.fromlatest.io))
 - [docker-slim](https://github.com/docker-slim/docker-slim)
 @snapend
 
@@ -184,18 +184,21 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/
 
 ---
 
+@snap[north span-100 text-center]
 ### 优化的考虑
+<br>
 
 #### **适合的才是最好的！**
+@snapend
 
-@ul[list-spaced-bullets list-fade-fragments]
+@snap[midpoint span-100 fragment]
 - 确定哪些东西可以在镜像中删除
 - 确定是否有更好的基础镜像
 - 考虑如何减少层
 - 如何减少构建时间（合理利用 Docker 缓存）
     - 经常变化的放到最后
     - 将安装命令放到前面
-@ulend
+@snapend
 
 --- 
 

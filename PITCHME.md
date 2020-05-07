@@ -118,35 +118,47 @@ RUN apt-get -y update && apt-get install -y python
 
 +++ 
 
-#### 避免不必要的文件
+@snap[north span-100 text-center]
+### 避免不必要的文件
+@snapend
 
-- .dockerignore
+@ul
+- .dockerignore 
 - 只添加必要的文件与目录
 - 删除不必要的文件
     - 删除包缓存
     - 删除构建时的源码包
 - 不安装不必要的软件，不安装 debug 工具
+@ulend
 
+Note:
+下面是两篇 .dockerignore 参考文章
+https://docs.docker.com/engine/reference/builder/#dockerignore-file
+https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/
 --- 
 
-### 构建阶段
+@snap[north span-100 text-center]
+## 构建阶段
+@snapend
 
+@snap[midpoint span-100 text-center]
 #### 在构建镜像时可以考虑的优化
 
 @fa[arrow-down]
+@snapend
 
 +++ 
 
-## docker 命令
-
 @snap[north span-100 text-center]
+### docker 命令
+@snapend
+
+@snap[midpoint span-100 text-left fragment]
 - docker build 自己的选项
     - `--force-rm` 总是删除临时容器
 - docker export + docker import
-@snapend
 
-@snap[south span-100]
-```bash zoom-50
+```bash
 docker export <CONTAINER ID> | docker import - some-image-name:latest
 ```
 @snapend

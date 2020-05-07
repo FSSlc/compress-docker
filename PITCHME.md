@@ -164,16 +164,18 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/
 
 +++
 
-### 工具
-
 @snap[north span-100 text-center]
+### 工具
+@snapend
+
+@snap[west span-50 text-center]
 #### 检测工具
 - [dockerfilelint](https://github.com/replicatedhq/dockerfilelint)
   - [在线网站](https://www.fromlatest.io) 
 - [docker-slim](https://github.com/docker-slim/docker-slim)
 @snapend
 
-@snap[south span-100 text-center]
+@snap[east span-50 text-center]
 #### 压缩工具
 - [docker-squash](https://github.com/goldmann/docker-squash)
 - [docker-slim](https://github.com/docker-slim/docker-slim)

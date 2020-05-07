@@ -204,7 +204,7 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/
 ### 参考
 @snapend
 
-@snap[midpoint span-100 text-center text-5]
+@snap[midpoint span-100 text-left text-03]
 - https://linuxhint.com/optimizing-docker-images/
 - https://rollout.io/blog/reduce-docker-image-size/
 - https://rollout.io/blog/alpine-based-docker-images-make-difference-real-world-apps/

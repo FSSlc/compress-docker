@@ -190,7 +190,7 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/
 #### **适合的才是最好的！**
 @snapend
 
-@snap[midpoint span-100 fragment]
+@snap[midpoint span-100 fragment text-5 text-center]
 - 确定哪些东西可以在镜像中删除
 - 确定是否有更好的基础镜像
 - 考虑如何减少层
@@ -204,15 +204,15 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/
 ### 参考
 @snapend
 
-@snap[midpoint span-100 text-center text-5]
-- https://linuxhint.com/optimizing-docker-images/
-- https://rollout.io/blog/reduce-docker-image-size/
-- https://rollout.io/blog/alpine-based-docker-images-make-difference-real-world-apps/
-- https://resources.codeship.com/hubfs/Webinar_Resources/Reducing_Docker_Image_Sizes_Codeship_Webinar_Slides.pdf
-- https://pythonspeed.com/docker/
-- https://blog.xebialabs.com/2017/05/18/5-docker-utilities-you-should-know/
-- https://itnext.io/3-simple-tricks-for-smaller-docker-images-f0d2bda17d1e
-- https://towardsdatascience.com/how-to-build-slim-docker-images-fast-ecc246d7f4a7
-- https://www.digitalocean.com/community/tutorials/how-to-optimize-docker-images-for-production
-- https://learnk8s.io/blog/smaller-docker-images
+@snap[midpoint span-100 text-center]
+- @size[0.5em](https://linuxhint.com/optimizing-docker-images/)
+- @size[0.5em](https://rollout.io/blog/reduce-docker-image-size/)
+- @size[0.5em](https://rollout.io/blog/alpine-based-docker-images-make-difference-real-world-apps/)
+- @size[0.5em](https://resources.codeship.com/hubfs/Webinar_Resources/Reducing_Docker_Image_Sizes_Codeship_Webinar_Slides.pdf)
+- @size[0.5em](https://pythonspeed.com/docker/)
+- @size[0.5em](https://blog.xebialabs.com/2017/05/18/5-docker-utilities-you-should-know/)
+- @size[0.5em](https://itnext.io/3-simple-tricks-for-smaller-docker-images-f0d2bda17d1e)
+- @size[0.5em](https://towardsdatascience.com/how-to-build-slim-docker-images-fast-ecc246d7f4a7)
+- @size[0.5em](https://www.digitalocean.com/community/tutorials/how-to-optimize-docker-images-for-production)
+- @size[0.5em](https://learnk8s.io/blog/smaller-docker-images)
 @snapend

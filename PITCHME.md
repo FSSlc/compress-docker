@@ -102,6 +102,7 @@ Note:
 ### 简单示例
 @snapend
 
+@snap[midpoint span-100 text-center text-10]
 ```dockerfile
 RUN apt-get -y update
 RUN apt-get install -y python
@@ -110,7 +111,7 @@ RUN apt-get -y update && apt-get install -y python
 ```
 
 @snap[south span-100]
-@[1,2](多个RUN)
+@[1,2](多个 RUN)
 @[4](一行命令)
 @snapend
 

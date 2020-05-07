@@ -96,26 +96,6 @@
 Note:
 每个 RUN COPY ADD 命令会构建一个层(1.10+)
 
-+++
-
-@snap[north span-100 text-center]
-### 简单示例
-@snapend
-
-@snap[midpoint span-100 text-center text-10]
-```dockerfile
-RUN apt-get -y update
-RUN apt-get install -y python
-
-RUN apt-get -y update && apt-get install -y python
-```
-@snapend
-
-@snap[south span-100]
-@[1,2](多个 RUN)
-@[4](一行命令)
-@snapend
-
 +++ 
 
 @snap[north span-100 text-center]
@@ -171,7 +151,7 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/
 @snap[west span-50 text-center]
 #### 检测工具
 - [dockerfilelint](https://github.com/replicatedhq/dockerfilelint)
-  - @size[0.5em]([在线网站](https://www.fromlatest.io))
+  - @size[0.6em]([在线网站](https://www.fromlatest.io))
 - [docker-slim](https://github.com/docker-slim/docker-slim)
 @snapend
 
@@ -190,7 +170,7 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/
 #### **适合的才是最好的！**
 @snapend
 
-@snap[midpoint span-100 fragment text-5 text-center]
+@snap[midpoint span-100 fragment text-10 text-center]
 - 确定哪些东西可以在镜像中删除
 - 确定是否有更好的基础镜像
 - 考虑如何减少层

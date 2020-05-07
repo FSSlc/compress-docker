@@ -51,7 +51,7 @@
 ### 选择合适的基础镜像
 @snapend
 
-@snap[midpoint span-100 text-left fragment]
+@snap[midpoint span-100 text-center fragment]
 - 使用小的基础镜像
     - FROM scratch
     - alpine

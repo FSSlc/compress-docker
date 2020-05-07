@@ -155,12 +155,9 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/
 
 @snap[midpoint span-100 text-left fragment]
 - docker build 自己的选项
-    - `--force-rm` 总是删除临时容器
+    - @size[0.5em](`--force-rm` 总是删除临时容器)
 - docker export + docker import
-
-```bash
-docker export <CONTAINER ID> | docker import - some-image-name:latest
-```
+    - @size[0.5em](docker export <CONTAINER ID> | docker import - some-image-name:latest)
 @snapend
 
 +++

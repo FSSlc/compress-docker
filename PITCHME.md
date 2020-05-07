@@ -109,6 +109,7 @@ RUN apt-get install -y python
 
 RUN apt-get -y update && apt-get install -y python
 ```
+@snapend
 
 @snap[south span-100]
 @[1,2](多个 RUN)

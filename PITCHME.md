@@ -186,7 +186,6 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/
 
 @snap[north span-100 text-center]
 ### 优化的考虑
-<br>
 
 #### **适合的才是最好的！**
 @snapend
@@ -201,10 +200,11 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore-2/
 @snapend
 
 --- 
-
+@snap[north span-100 text-center]
 ### 参考
+@snapend
 
-@snap[north span-100 text-center text-10]
+@snap[midpoint span-100 text-center text-5]
 - https://linuxhint.com/optimizing-docker-images/
 - https://rollout.io/blog/reduce-docker-image-size/
 - https://rollout.io/blog/alpine-based-docker-images-make-difference-real-world-apps/

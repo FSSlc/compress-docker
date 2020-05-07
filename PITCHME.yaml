@@ -15,11 +15,6 @@ theme-controls   : [ "#C0C0C0" ]
 theme-margins    : [ "0", "15px" ]
 layout           : center
 
-# font
-
-.font-fira         	{ font-family: "Fira Code" !important; }
-.font-source-code   { font-family: "Source Code Pro" !important; }
-
 #
 # Highlight Setting
 # Doc: https://gitpitch.com/docs/settings/highlight
@@ -64,6 +59,3 @@ published : true
 # title : "如何制作一个更小的 Docker 镜像"
 # description : "Build A Smaller Docker Image"
 # thumbnail : https://gitpitch.com/fsslc/tutorial-thumb.png
-
-# code line numbers
-code-line-numbers : true
